@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* background-color: black;
+  border: 1px solid white;
+  border-radius: 2.5vh; */
+  /* overflow-x: hidden;
+overflow-y: hidden; */
+}
+.Main_Porpoise_Img {
+  width: 50vh;
+  height: 50vh;
+
+  border: 2px;
+  border-radius: 100%;
+  border-color: white;
+  border-style: solid;
+  margin: 0dvh;
+  transition: ease-in-out 50s;
+}
+.Main_Porpoise_Img:hover{
+  transform: rotateZ(36000deg);
+  
+}
+div:hover {
+  /* border-radius: 10vw;
+  transition: ease-in-out 500ms;
+  transform: rotateZ(360deg); */
+}
+h1 {
+  transition: 550ms ease-in-out;
+}
+h1:hover {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-weight: bold;
+}
+.Div_Hori_P1 {
+  width: 100%;
+  height: 30%;
+  background-color: blue;
+}
+.Div_Hori_P2 {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: aqua;
+}
+.Div_Hori_P2P5 {
+  width: calc(100% / 3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.Hori_P2P5_Text {
+  border-radius: 2.5dvh;
+  border: 1dvh;
+  border-color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
+.Div_Hori_P3 {
+  width: 100%;
+  height: 25%;
+  background-color: cadetblue;
+}
+.Div_Vert {
+  width: 50%;
+  height: 100%;
+  background-color: red;
+}
+.Div_Title {
+  width: 100vw;
+  height: 10vh;
+}
+.Div_Box {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: crimson;
+}
+div {
+}
+#Div_Vert_1 {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+#Div_Hori_1 {
+  width: 50%;
+  height: 100%;
+  /* background-color: Blue; */
+  display: flex;
+  flex-flow: column nowrap;
+}
+.Img_Alignment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Commented code to copy and paste back into HTML later
+
+      <div
+        style="
+          width: 50%;
+          height: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="Porpoise_500x500.png"
+          alt="Porpoise500x500"
+          class="Main_Porpoise_Img"
+        />
+        
+Seperation Line -----------------------------
+
+
+            <!-- <div class="navbar"
+        <ul class="navlist">
+            <a class="navitem" href=""><li>test</li></a>
+        </ul>
+    </div> 
+    <h1 class="font">Testing random things</h1>
+    <div style="width: 100vw; height: 10vh; ">
+    <img
+      src="Porpoise_500x500.png"
+      alt="Porpoise500x500"
+      style="
+        width: 71vh;
+        height: 71vh;
+      "
+      class="border"
+    />
+    </div>
+    <div id="gradient"></div>
+    <div class="TestBox">test</div> -->
+
+    Seperation Line-------------------------------
+        <div style="width: 100wv; height: 89vh">
+      </div>
+      <div style="width: 50%; height: 100%; display: flex; flex-flow: row nowrap">
+        <div></div>
+      </div>
+    </div>
+        */

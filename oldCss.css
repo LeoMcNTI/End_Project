@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    --speed: 50000ms;
+    /* border: 1px solid white; */
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 5vh;
+    font-size: 5vh
+}
+
+#gradient {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -1dvh;
+    width: 400dvh;
+    height: 400dvh;
+    color: #fff;
+    background: linear-gradient(-45deg, #363732, #53D8FB, #66C3FF, #1d9a96, #448972 );
+    /* background: linear-gradient(-45deg, #ccff00, #6200ff, #04ff00, #ffb300, #ff0000 ); Rainbow Gradient because funny :D */
+    background-size: 400% 400%;
+    animation: Gradient var(--speed) forwards infinite;
+}
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.border {
+    border-radius: 100%;
+    border-color: black;
+    border-style: solid;
+}
+.font {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10dvh;
+}
+.TestBox {
+
+}
+/* .navbar {
+    width:100vw;
+    height: 8vh;
+    background-color: red;
+    background: linear-gradient(-45deg, hsl(191, 51%, 70%), hsl(192, 50%, 70%), hsl(204, 50%, 70%), hsl(178, 50%, 70%), hsl(160, 50%, 70%) );
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vh;
+    
+} */
+ div- {
+    border: 1px solid white;
+ }
