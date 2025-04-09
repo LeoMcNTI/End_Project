@@ -4,8 +4,8 @@
   /* background-color: black;
   border: 1px solid white;
   border-radius: 2.5vh; */
-  /* overflow-x: hidden;
-overflow-y: hidden; */
+  overflow-x: hidden;
+overflow-y: hidden;
 }
 .Main_Porpoise_Img {
   width: 50vh;
@@ -16,11 +16,12 @@ overflow-y: hidden; */
   border-color: white;
   border-style: solid;
   margin: 0dvh;
-  transition: ease-in-out 50s;
+  transition: ease-in-out 100s;
+  /* filter: blur(5000px); */
 }
-.Main_Porpoise_Img:hover{
-  transform: rotateZ(36000deg);
-  
+.Main_Porpoise_Img:hover {
+  transform: rotateZ(36000deg) scale(1.5);
+  filter: blur(0px);
 }
 div:hover {
   /* border-radius: 10vw;
@@ -28,24 +29,91 @@ div:hover {
   transform: rotateZ(360deg); */
 }
 h1 {
-  transition: 550ms ease-in-out;
+  /* transition: 250ms ease-in-out; */
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
 }
 h1:hover {
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
   color: white;
   font-weight: bold;
+  text-decoration: underline;
+}
+.Item_Box{
+  border: 0.5dvh;
+  border-radius: 2.5dvh;
+  border-color: black;
+  border-style: solid;
+  font-size: 5dvh;
+  width: 15dvw;
+  height: 15dvh;
+  transition: 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Medium_Item_Box{
+  border: 0.5dvh;
+  border-radius: 2.5dvh;
+  border-color: black;
+  border-style: solid;
+  font-size: 5dvh;
+  width: 25dvw;
+  height: 15dvh;
+  transition: 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Large_Item_Box{
+  border: 0.5dvh;
+  border-radius: 2.5dvh;
+  border-color: black;
+  border-style: solid;
+  font-size: 5dvh;
+  width: 35dvw;
+  height: 25dvh;
+  transition: 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item_Box:hover{
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  border-color: White;
+  filter: drop-shadow(10);
+}
+.Medium_Item_Box:hover{
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  border-color: White;
+  filter: drop-shadow(10);
+}
+.Large_Item_Box:hover{
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  border-color: White;
+  filter: drop-shadow(10);
 }
 .Div_Hori_P1 {
   width: 100%;
   height: 30%;
-  background-color: blue;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Div_Hori_P2 {
   width: 100%;
   height: 45%;
   display: flex;
   flex-flow: row nowrap;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .Div_Hori_P2P5 {
   width: calc(100% / 3);
@@ -53,7 +121,7 @@ h1:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aquamarine;
+
 }
 .Hori_P2P5_Text {
   border-radius: 2.5dvh;
@@ -65,25 +133,53 @@ h1:hover {
 .Div_Hori_P3 {
   width: 100%;
   height: 25%;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Div_Vert {
   width: 50%;
   height: 100%;
-  background-color: red;
+  /* background-color: red; */
 }
 .Div_Title {
-  width: 100vw;
+  width: 100dvw;
   height: 10vh;
+  left: 0;
+  background-color: red;
 }
 .Div_Box {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-flow: row nowrap;
-  background-color: crimson;
+  /* background-color: crimson; */
+  left: -1dvh;
+  /* width: 400dvh;
+  height: 400dvh; */
+  color: #fff;
+  background: linear-gradient(-45deg, #363732, #53D8FB, #66C3FF, #1d9a96, #448972 );
+  /* background: linear-gradient(-45deg, #ccff00, #6200ff, #04ff00, #ffb300, #ff0000 ); Rainbow Gradient because funny :D */
+  background-size: 400% 400%;
+  animation: Gradient 5s forwards infinite;
 }
 div {
+  /* z-index: -1; */
+  /* top: 0;
+  bottom: 0; */
+
+}
+@keyframes Gradient {
+  0% {
+      background-position: 0% 50%
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 #Div_Vert_1 {
   width: 50%;
@@ -157,4 +253,37 @@ Seperation Line -----------------------------
         <div></div>
       </div>
     </div>
+
+Seperation Line ---------------------------------
+
+/*   
+  min-width: min-content;
+  max-width: fit-content;
+  width: auto;
+  min-height: min-content;
+  max-height: fit-content;
+  height: auto;
+  padding: 3vw;
+  padding-top: 2vw;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2vw;
+  border-width: 0.2rem;
+  border-color: hsl(184, 100%, 38%);
+  border-style: solid;
+  backdrop-filter: blur(1vh);
+  z-index: 2; */
+/* 
+  min-width: min-content;
+  max-width: fit-content;
+  width: auto;
+  min-height: min-content;
+  max-height: fit-content;
+  height: auto;
+  padding: 3vw;
+  padding-top: 2vw;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2vw;
+  border-width: 0.2rem;
+  border-color:hsl(184, 100%, 38%) ;
+  border-style: solid;
         */
