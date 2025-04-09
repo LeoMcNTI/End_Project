@@ -65,6 +65,7 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .Large_Item_Box{
   border: 0.5dvh;
@@ -78,6 +79,7 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .Item_Box:hover{
   font-weight: bold;
@@ -159,7 +161,7 @@ h1:hover {
   /* width: 400dvh;
   height: 400dvh; */
   color: #fff;
-  background: linear-gradient(-45deg, #363732, #53D8FB, #66C3FF, #1d9a96, #448972 );
+  background: linear-gradient(-45deg, hsl(72, 5%, 65%), hsl(192, 95%, 65%), hsl(204, 100%, 65%), hsl(178, 68%, 65%), hsl(160, 34%, 65%) );
   /* background: linear-gradient(-45deg, #ccff00, #6200ff, #04ff00, #ffb300, #ff0000 ); Rainbow Gradient because funny :D */
   background-size: 400% 400%;
   animation: Gradient 5s forwards infinite;
