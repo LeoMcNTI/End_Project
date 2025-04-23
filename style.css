@@ -5,9 +5,9 @@
   border: 1px solid white;
   border-radius: 2.5vh; */
   overflow-x: hidden;
-overflow-y: hidden;
+  overflow-y: hidden;
 }
-.Main_Porpoise_Img {
+.Main_Img {
   width: 50vh;
   height: 50vh;
 
@@ -19,7 +19,7 @@ overflow-y: hidden;
   transition: ease-in-out 100s;
   /* filter: blur(5000px); */
 }
-.Main_Porpoise_Img:hover {
+.Main_Img:hover {
   transform: rotateZ(36000deg) scale(1.5);
   filter: blur(0px);
 }
@@ -40,7 +40,7 @@ h1:hover {
   font-weight: bold;
   text-decoration: underline;
 }
-.Item_Box{
+.Item_Box {
   border: 0.5dvh;
   border-radius: 2.5dvh;
   border-color: black;
@@ -52,8 +52,10 @@ h1:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
-.Medium_Item_Box{
+.Medium_Item_Box {
   border: 0.5dvh;
   border-radius: 2.5dvh;
   border-color: black;
@@ -66,8 +68,10 @@ h1:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
-.Large_Item_Box{
+.Large_Item_Box {
   border: 0.5dvh;
   border-radius: 2.5dvh;
   border-color: black;
@@ -80,22 +84,24 @@ h1:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
-.Item_Box:hover{
+.Item_Box:hover {
   font-weight: bold;
   color: white;
   text-decoration: underline;
   border-color: White;
   filter: drop-shadow(10);
 }
-.Medium_Item_Box:hover{
+.Medium_Item_Box:hover {
   font-weight: bold;
   color: white;
   text-decoration: underline;
   border-color: White;
   filter: drop-shadow(10);
 }
-.Large_Item_Box:hover{
+.Large_Item_Box:hover {
   font-weight: bold;
   color: white;
   text-decoration: underline;
@@ -123,7 +129,6 @@ h1:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 .Hori_P2P5_Text {
   border-radius: 2.5dvh;
@@ -161,8 +166,15 @@ h1:hover {
   /* width: 400dvh;
   height: 400dvh; */
   color: #fff;
-  background: linear-gradient(-45deg, hsl(72, 5%, 65%), hsl(192, 95%, 65%), hsl(204, 100%, 65%), hsl(178, 68%, 65%), hsl(160, 34%, 65%) );
-  /* background: linear-gradient(-45deg, #ccff00, #6200ff, #04ff00, #ffb300, #ff0000 ); Rainbow Gradient because funny :D */
+  background: linear-gradient(
+    -45deg,
+    hsl(72, 5%, 65%),
+    hsl(192, 95%, 65%),
+    hsl(204, 100%, 65%),
+    hsl(178, 68%, 65%),
+    hsl(160, 34%, 65%)
+  );
+  /* background: linear-gradient(-45deg,#ccff00,#6200ff,#04ff00,#ffb300,#ff0000); */
   background-size: 400% 400%;
   animation: Gradient 5s forwards infinite;
 }
@@ -170,17 +182,16 @@ div {
   /* z-index: -1; */
   /* top: 0;
   bottom: 0; */
-
 }
 @keyframes Gradient {
   0% {
-      background-position: 0% 50%
+    background-position: 0% 50%;
   }
   50% {
-      background-position: 100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-      background-position: 0% 50%;
+    background-position: 0% 50%;
   }
 }
 #Div_Vert_1 {
