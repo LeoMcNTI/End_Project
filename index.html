@@ -21,14 +21,17 @@
 
         <!-- src="Pigeon.png" -->
         <script>
-          function pigeonFunction() {
-            document.getElementById("demo").src = "Pigeon.png";
-            document.getElementById("gradient").style = "background: linear-gradient(-45deg,#ccff00,#6200ff,#04ff00,#ffb300,#ff0000); background-size: 400% 400%;"
-          }
-
+          
           function porpoiseFunction() {
             document.getElementById("demo").src = "Porpoise_500x500.png";
-               document.getElementById("gradient").style = "  background: linear-gradient(-45deg,hsl(72, 5%, 65%),hsl(192, 95%, 65%),hsl(204, 100%, 65%),hsl(178, 68%, 65%),hsl(160, 34%, 65%)); background-size: 400% 400%;"
+            document.getElementById("gradient").style = "  background: linear-gradient(-45deg,hsl(22, 5%, 65%),hsl(165, 57%, 65%),hsl(204, 100%, 65%),hsl(178, 68%, 65%),hsl(160, 34%, 65%)); background-size: 400% 400%;";
+          }
+          function pigeonFunction() {
+            document.getElementById("demo").src = "Pigeon.png";
+            document.getElementById("gradient").style = "background: linear-gradient(-45deg,hsl(206, 75%, 30%),hsl(206, 75%, 40%),hsl(206, 75%, 50%),hsl(206, 75%, 60%),hsl(206, 75%, 65%)); background-size: 400% 400%;";
+          }
+          function pedroFunction() {
+             document.getElementById("demo").src = "pedro-racoon.gif";
           }
 
 
@@ -48,7 +51,7 @@
             <h1 onclick="pigeonFunction()" class="Item_Box">Testing2</h1>
           </div>
           <div class="Div_Hori_P2P5">
-            <h1 class="Item_Box">Testing3</h1>
+            <h1 onclick="pedroFunction()" class="Item_Box">Testing3</h1>
           </div>
         </div>
         <div class="Div_Hori_P3">

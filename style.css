@@ -166,15 +166,15 @@ h1:hover {
   /* width: 400dvh;
   height: 400dvh; */
   color: #fff;
-  background: linear-gradient(
-    -45deg,
-    hsl(72, 5%, 65%),
-    hsl(192, 95%, 65%),
+  background: radial-gradient(
+    /* -45deg, */
+    hsl(22, 5%, 65%),
+    hsl(165, 57%, 65%),
     hsl(204, 100%, 65%),
     hsl(178, 68%, 65%),
     hsl(160, 34%, 65%)
   );
-  /* background: linear-gradient(-45deg,#ccff00,#6200ff,#04ff00,#ffb300,#ff0000); */
+  /* background: linear-gradient(-45deg,hsl(206, 75%, 30%),hsl(206, 75%, 40%),hsl(206, 75%, 50%),hsl(206, 75%, 60%),hsl(206, 75%, 65%)); */
   background-size: 400% 400%;
   animation: Gradient 5s forwards infinite;
 }
@@ -185,13 +185,13 @@ div {
 }
 @keyframes Gradient {
   0% {
-    background-position: 0% 50%;
+    background-size: 0% 50%;
   }
   50% {
-    background-position: 100% 50%;
+    background-size: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-size: 0% 50%;
   }
 }
 #Div_Vert_1 {
