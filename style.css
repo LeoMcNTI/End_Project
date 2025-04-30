@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
+  
   padding: 0;
   margin: 0;
   /* background-color: black;
@@ -6,6 +8,8 @@
   border-radius: 2.5vh; */
   overflow-x: hidden;
   overflow-y: hidden;
+  font-family: Bebas Neue;
+  letter-spacing: 0.25rem;
 }
 .Main_Img {
   width: 50vh;
@@ -18,12 +22,11 @@
   margin: 0dvh;
   transition: ease-in-out 100s;
   /* filter: blur(5000px); */
-  animation: Pedro 1s forwards infinite;
+  animation: Null 1s infinite;
 
 }
 .Main_Img:hover {
   transform: rotateZ(36000deg) scale(1.5);
-  filter: blur(0px);
 }
 div:hover {
   /* border-radius: 10vw;
@@ -56,6 +59,7 @@ h1:hover {
   align-items: center;
   cursor: pointer;
   user-select: none;
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .Medium_Item_Box {
   border: 0.5dvh;
@@ -72,6 +76,7 @@ h1:hover {
   text-align: center;
   cursor: pointer;
   user-select: none;
+  background-color: hsla(0, 0%, 100%, 0.1);
 }
 .Large_Item_Box {
   border: 0.5dvh;
@@ -88,6 +93,9 @@ h1:hover {
   text-align: center;
   cursor: pointer;
   user-select: none;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .Item_Box:hover {
   font-weight: bold;
@@ -169,18 +177,18 @@ h1:hover {
   height: 400dvh; */
   color: #fff;
   background: linear-gradient(
-    /* -45deg,
+    -45deg,
     hsl(22, 5%, 65%),
     hsl(165, 57%, 65%),
     hsl(204, 100%, 65%),
     hsl(178, 68%, 65%),
-    hsl(160, 34%, 65%) */
-        -45deg,
+    hsl(160, 34%, 65%)
+        /* -45deg,
     hsl(0, 0%, 100%),
     hsl(0, 0%, 0%),
     hsl(0, 0%, 100%),
     hsl(0, 0%, 0%),
-    hsl(0, 0%, 100%)
+    hsl(0, 0%, 100%) */
   );
   /* background: linear-gradient(-45deg,hsl(206, 75%, 30%),hsl(206, 75%, 40%),hsl(206, 75%, 50%),hsl(206, 75%, 60%),hsl(206, 75%, 65%)); */
   background-size: 400% 400%;
@@ -203,15 +211,10 @@ div {
   }
 }
 @keyframes Pedro {
-    0% {
-      
+    /* 0% {
       filter:hue-rotate(0deg);
-    }
-    50% {
-      
-    }
+    } */
     100% {
-      
       filter:hue-rotate(360deg);
     }
   }
