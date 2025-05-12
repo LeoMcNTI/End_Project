@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
-  
   padding: 0;
   margin: 0;
-  /* background-color: black;
-  border: 1px solid white;
-  border-radius: 2.5vh; */
   overflow-x: hidden;
   overflow-y: hidden;
   font-family: Bebas Neue;
   letter-spacing: 0.25rem;
+}
+div:hover {
+  /* This is purely here as an easter egg, if you find this and mess around with it you can get some funny effects lol :p */
+  /* border-radius: 10vw;
+  transition: ease-in-out 500ms;
+  transform: rotateZ(360deg); */
 }
 a {
   text-decoration: none;
@@ -26,17 +28,14 @@ a {
   margin: 0dvh;
   transition: ease-in-out 100s;
 
+ /* This is here to make the Pedro effect be able to rotate with the hue-shift filter*/
   animation: Null 1s infinite;
-
 }
 .Main_Img:hover {
+  /* Spiiiiinnnn */
   transform: rotateZ(36000deg);
 }
-div:hover {
-  /* border-radius: 10vw;
-  transition: ease-in-out 500ms;
-  transform: rotateZ(360deg); */
-}
+/* My text effects, they look so nice don't they :D */
 h1 {
   color: inherit;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
@@ -45,6 +44,11 @@ h1 {
 }
 h4 {
   color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+}
+h5 {
+  text-align: center;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
 }
@@ -58,6 +62,13 @@ h4:hover {
   font-weight: bold;
   text-decoration: underline;
 }
+h5:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* All the boxes that I built this website out of come from these */
 .Item_Box {
   border: 0.5dvh;
   border-radius: 2.5dvh;
@@ -111,12 +122,7 @@ h4:hover {
   padding-right: 1rem;
   text-decoration: none;
 }
-
 #Large_Text_Box {
-  /* border: 0.5dvh;
-  border-radius: 2.5dvh;
-  border-color: black;
-  border-style: solid; */
   font-size: 5dvh;
   width: 60dvw;
   height: 60dvh;
@@ -127,7 +133,6 @@ h4:hover {
   text-align: center;
   cursor: pointer;
   user-select: none;
-  /* background-color: hsla(0, 0%, 100%, 0.1); */
   padding-left: 1rem;
   padding-right: 1rem;
   text-decoration: none;
@@ -174,20 +179,21 @@ h4:hover {
   border-color: White;
   filter: drop-shadow(10);
 }
+/* My layout */
 .Div_Hori_P1 {
+  /* background-color: blue; This was here to debug and see if my layout was working*/
   width: 100%;
   height: 30%;
-  /* background-color: blue; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .Div_Hori_P2 {
+  /* background-color: aqua; This was here to debug and see if my layout was working*/
   width: 100%;
   height: 45%;
   display: flex;
   flex-flow: row nowrap;
-  /* background-color: aqua; */
 }
 .Div_Hori_P2P5 {
   width: calc(100% / 3);
@@ -204,23 +210,41 @@ h4:hover {
   font-weight: normal;
 }
 .Div_Hori_P3 {
+  /* background-color: cadetblue; This was here to debug and see if my layout was working*/
   width: 100%;
   height: 25%;
-  /* background-color: cadetblue; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .Div_Vert {
+  /* background-color: red; This was here to debug and see if my layout was working*/
   width: 50%;
   height: 100%;
-  /* background-color: red; */
 }
 .Div_Title {
   width: 100dvw;
   height: 10vh;
   left: 0;
   background-color: red;
+}
+#Div_Vert_1 {
+/* background-color: red; This was here to debug and see if my layout was working*/
+width: 50%;
+height: 100%;
+display: flex;
+flex-flow: row nowrap;
+
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+#Div_Hori_1 {
+/* background-color: Blue; This was here to debug and see if my layout was working*/
+width: 50%;
+height: 100%;
+display: flex;
+flex-flow: column nowrap;
 }
 .Div_Box {
   width: 100vw;
@@ -236,24 +260,21 @@ h4:hover {
     hsl(204, 100%, 65%),
     hsl(178, 68%, 65%),
     hsl(160, 34%, 65%)
+    );
     /* width: 400dvh;
-    height: 400dvh; */
-        /* -45deg,
+    height: 400dvh;
+    -45deg,
     hsl(0, 0%, 100%),
     hsl(0, 0%, 0%),
     hsl(0, 0%, 100%),
     hsl(0, 0%, 0%),
-    hsl(0, 0%, 100%) */
-  );
-  /* background: linear-gradient(-45deg,hsl(206, 75%, 30%),hsl(206, 75%, 40%),hsl(206, 75%, 50%),hsl(206, 75%, 60%),hsl(206, 75%, 65%)); */
+    hsl(0, 0%, 100%)
+  background: linear-gradient(-45deg,hsl(206, 75%, 30%),hsl(206, 75%, 40%),hsl(206, 75%, 50%),hsl(206, 75%, 60%),hsl(206, 75%, 65%)); 
+  These are the 2 gradients used for the Pigeon and Pedro effects respectedly. Orginally used to just test out the gradients before I applied them to the buttons.*/
   background-size: 400% 400%;
   animation: Gradient 5s forwards infinite;
 }
-div {
-  /* z-index: -1; */
-  /* top: 0;
-  bottom: 0; */
-}
+/* All my keyframes, cool animations right :p */
 @keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -277,14 +298,11 @@ div {
   }
 }
 @keyframes Pedro {
-    /* 0% {
-      filter:hue-rotate(0deg);
-    } */
     100% {
       filter:hue-rotate(360deg);
     }
   }
-
+  /* I wanted a seperate look for the conclusion page so decided to make a special id for it :) */
 #Conclusion_Box{
   width: 100vw;
   height: 100vh;
@@ -292,6 +310,7 @@ div {
   flex-flow: row nowrap;
   left: -1dvh;
   color: #fff;
+
   background: linear-gradient(
     -45deg,
     hsl(22, 5%, 65%),
@@ -304,25 +323,7 @@ div {
     background-size: 500% 500%;
     animation: Gradient2 10s forwards infinite;
 }
-  
-#Div_Vert_1 {
-  width: 50%;
-  height: 100%;
-  /* background-color: red; */
-  display: flex;
-  flex-flow: row nowrap;
-
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-#Div_Hori_1 {
-  width: 50%;
-  height: 100%;
-  /* background-color: Blue; */
-  display: flex;
-  flex-flow: column nowrap;
-}
+/* Classes and Id's named "Alignment"... What do you think they do?!? (They align my things to where I want them) */
 .Img_Alignment {
   display: flex;
   align-items: center;
@@ -342,6 +343,7 @@ div {
   align-items: center;
   justify-content: center;
 }
+/* This was only here for the "Look what you fucking did" gif */
 .Explosion{
   width: 100vw;
   height: 100vh;
@@ -349,10 +351,10 @@ div {
   z-index: -1;
 }
 @media (min-width: 30em) and (max-width: 50em) {
-
+/* There were plans to start working on this however I believe I ran out of time :/ */
 }
 
-/* Commented code to copy and paste back into HTML later
+/* Commented code in case of me regretting a change or not. 
 
       <div
         style="
