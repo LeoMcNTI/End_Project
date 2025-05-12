@@ -11,9 +11,13 @@
   font-family: Bebas Neue;
   letter-spacing: 0.25rem;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .Main_Img {
-  width: 50vh;
-  height: 50vh;
+  width: 75vh;
+  height: 75vh;
 
   border: 2px;
   border-radius: 100%;
@@ -21,12 +25,12 @@
   border-style: solid;
   margin: 0dvh;
   transition: ease-in-out 100s;
-  /* filter: blur(5000px); */
+
   animation: Null 1s infinite;
 
 }
 .Main_Img:hover {
-  transform: rotateZ(36000deg) scale(1.5);
+  transform: rotateZ(36000deg);
 }
 div:hover {
   /* border-radius: 10vw;
@@ -34,13 +38,22 @@ div:hover {
   transform: rotateZ(360deg); */
 }
 h1 {
-  /* transition: 250ms ease-in-out; */
+  color: inherit;
+  text-decoration: underline 0.15em rgba(255, 255, 255, 0);
+  transition: text-decoration-color 300ms;
+  z-index: 1;
+}
+h4 {
   color: inherit;
   text-decoration: underline 0.15em rgba(255, 255, 255, 0);
   transition: text-decoration-color 300ms;
 }
 h1:hover {
-  /* font-family: "Courier New", Courier, monospace; */
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+h4:hover {
   color: white;
   font-weight: bold;
   text-decoration: underline;
@@ -96,6 +109,49 @@ h1:hover {
   background-color: hsla(0, 0%, 100%, 0.1);
   padding-left: 1rem;
   padding-right: 1rem;
+  text-decoration: none;
+}
+
+#Large_Text_Box {
+  /* border: 0.5dvh;
+  border-radius: 2.5dvh;
+  border-color: black;
+  border-style: solid; */
+  font-size: 5dvh;
+  width: 60dvw;
+  height: 60dvh;
+  transition: 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  /* background-color: hsla(0, 0%, 100%, 0.1); */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+#Large_Text_Box2 {
+  margin-top: 30vh;
+  border: 0.5dvh;
+  border-radius: 2.5dvh;
+  border-color: black;
+  border-style: solid;
+  font-size: 5dvh;
+  width: 50dvw;
+  height: 50dvh;
+  transition: 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
 }
 .Item_Box:hover {
   font-weight: bold;
@@ -171,10 +227,7 @@ h1:hover {
   height: 100vh;
   display: flex;
   flex-flow: row nowrap;
-  /* background-color: crimson; */
   left: -1dvh;
-  /* width: 400dvh;
-  height: 400dvh; */
   color: #fff;
   background: linear-gradient(
     -45deg,
@@ -183,6 +236,8 @@ h1:hover {
     hsl(204, 100%, 65%),
     hsl(178, 68%, 65%),
     hsl(160, 34%, 65%)
+    /* width: 400dvh;
+    height: 400dvh; */
         /* -45deg,
     hsl(0, 0%, 100%),
     hsl(0, 0%, 0%),
@@ -210,6 +265,17 @@ div {
     background-position: 0% 50%;
   }
 }
+@keyframes Gradient2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes Pedro {
     /* 0% {
       filter:hue-rotate(0deg);
@@ -218,6 +284,27 @@ div {
       filter:hue-rotate(360deg);
     }
   }
+
+#Conclusion_Box{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  left: -1dvh;
+  color: #fff;
+  background: linear-gradient(
+    -45deg,
+    hsl(22, 5%, 65%),
+    hsl(165, 57%, 65%),
+    hsl(206, 75%, 30%),
+    hsl(206, 75%, 40%),
+    hsl(0, 0%, 0%),
+    hsl(0, 0%, 100%)
+    );
+    background-size: 500% 500%;
+    animation: Gradient2 10s forwards infinite;
+}
+  
 #Div_Vert_1 {
   width: 50%;
   height: 100%;
@@ -240,6 +327,29 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#Alignment{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Alignment2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Explosion{
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  z-index: -1;
+}
+@media (min-width: 30em) and (max-width: 50em) {
+
 }
 
 /* Commented code to copy and paste back into HTML later
