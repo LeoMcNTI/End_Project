@@ -7,12 +7,12 @@
   font-family: Bebas Neue;
   letter-spacing: 0.25rem;
 }
-div:hover {
-  /* This is purely here as an easter egg, if you find this and mess around with it you can get some funny effects lol :p */
-  /* border-radius: 10vw;
+/* div:hover {
+  This is purely here as an easter egg, if you find this and mess around with it you can get some funny effects lol :p
+  border-radius: 10vw;
   transition: ease-in-out 500ms;
-  transform: rotateZ(360deg); */
-}
+  transform: rotateZ(360deg);
+} */
 a {
   text-decoration: none;
   color: inherit;
